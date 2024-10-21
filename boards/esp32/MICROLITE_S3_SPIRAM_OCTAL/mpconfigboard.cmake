@@ -10,6 +10,9 @@ set(SDKCONFIG_DEFAULTS
     ${MICROPY_BOARD_DIR}/sdkconfig-8m.partition
 )
 
+# this option causes the camera module to build
+set(CAMERA_TYPE esp32)
+
 message (STATUS "mpconfigboard.cmake: PROJECT_DIR=${PROJECT_DIR}")
 
 set(USER_C_MODULES
