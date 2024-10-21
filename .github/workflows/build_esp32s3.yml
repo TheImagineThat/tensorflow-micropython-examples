@@ -4,12 +4,7 @@ name: ESP32 S3
 # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#onschedule
 on:
   workflow_dispatch
-  pull_request:
-    paths-ignore:
-      - 'examples/**'
-      - 'README.md'
-      - 'ci/*unix*.sh'
-      - '.github/workflows/build_unix.yml'
+
 
 jobs:
   tensorflow_micropython_esp32_s3_build:
